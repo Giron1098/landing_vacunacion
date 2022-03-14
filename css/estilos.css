@@ -1,0 +1,425 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* filter: opacity(80%); */
+}
+
+.logo h2 {
+    color: #3267D9;
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 40px;
+    color: gray;
+}
+nav a:hover{
+    color: #F3F5FB;
+}
+
+nav button {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #3267D9;
+    width: 130px;
+    height: 40px;
+    color: #F3F5FB;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+nav button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+#carrusel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0px;
+}
+
+#carrusel .text-carrusel {
+    width: 100%;
+}
+
+#carrusel .image-carrusel {
+    display: inline-flex;
+    height: 600px;
+}
+
+.text-carrusel {
+    background-image: url('../assets/triangles-background.jpg');
+    height: 600px;
+}
+
+.text-carrusel h1 {
+    color: #2D4E7B;
+    font-size: 67px;
+    padding: 56px;
+}
+
+.text-carrusel p {
+    color: gray;
+    font-size: 20px;
+    padding-left: 56px;
+}
+
+.text-under_carrusel {
+    display: flex;
+}
+
+.select-vaccine {
+    display: grid;
+    color: #2D4E7B;
+    background-color: white;
+    position: absolute;
+    padding-left: 56px;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0.88;
+}
+
+.sc-vaccine {
+    display: flex;
+    margin-right: 40px;
+    margin-bottom: 18px;
+}
+
+.sc-vaccine button {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #3267D9;
+    width: 130px;
+    height: 40px;
+    color: #F3F5FB;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+.sc-vaccine button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.sc-vaccine_p {
+    padding-right: 40px;
+    justify-content: space-between;
+}
+
+.select-vaccine label {
+    font-size: 25px;
+    padding-left: 56px;
+}
+
+.img_brands {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    opacity: 0.44;
+    justify-content: space-between;
+}
+
+.img_brands img {
+    width: 20%;
+    height: 20%;
+    padding-right: 0px;
+}
+
+.why_vaccines
+{
+    align-items: center;
+    width: 50%;
+    margin: 50px;
+}
+
+.why_vaccines h1{
+    color:#2D4E7B;
+    font-size: 40px;
+}
+
+.why_vaccines p {
+    color:gray;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card h2{
+    font-weight: 600;
+    color:#2D4E7B;
+    padding: 20px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card {
+    width: 250px;
+    height: 370px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: left;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 16px rgba(45, 78, 123, 0.2)
+}
+
+#preparation {
+    display: flex;
+
+}
+
+.img_preparation_for_vaccine {
+    display: inline-flex;
+    height: 600px;
+}
+
+.txt_preparation_for_vaccine{
+    margin: 50px;
+}
+
+.txt_preparation_for_vaccine h1 {
+    color:#2D4E7B;
+    font-size: 40px;
+}
+
+.txt_preparation_for_vaccine p {
+    color:gray;
+    font-size: 20px;
+}
+
+.collapsible_button {
+    background-color: white;
+    color:#2D4E7B;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.collapsible_button:after {
+    content: '\25BC';
+    color: #2D4E7B;
+    float: right;
+    font-size: 15px;
+    margin-left: 5px;
+    background-color: #F1F5FF;
+    padding: 10px;
+}
+
+.active:after {
+    content: "\25B2";
+}
+
+.active, .collapsible_button:hover {
+    background-color:#F3F5FB;
+}
+
+.collapsible_text {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#emergency_contact {
+    display: flex;
+}
+
+.emergency_contact_img img {
+    display: inline-flex;
+    height: 600px;
+}
+
+.emergency_contact_cards {
+    display: flex;
+}
+
+.emergency_contact_card {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 25px;
+    text-align: left;
+    transition: all 0.25s;
+}
+
+.emergency_contact_card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 16px rgba(45, 78, 123, 0.2)
+}
+
+.emergency_contact_info {
+    margin: 50px;
+}
+
+.emergency_contact_info h1 {
+    color: #2D4E7B;
+    font-size: 40px;
+}
+
+.emergency_contact_info p {
+    color:gray;
+    font-size: 18px;
+    
+}
+
+.emergency_contact_card_up {
+    display: flex;
+    padding: 20px;
+}
+
+
+.emergency_contact_card_up_icon p {
+    color: #3454CE;
+    font-size: 30px;
+    background-color: #F1F5FF;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.emergency_contact_card_up_text h3 {
+    margin-left:20px;
+    padding: 10px;
+    color: #2D4E7B;
+}
+
+.emergency_contact_card_up_text p {
+    margin-left:20px;
+    padding: 10px;
+    margin-top: -25px;
+}
+
+.emergency_contact_card_down {
+    align-items: center;
+    margin: 25px;
+}
+
+.emergency_contact_card_down button {
+    background-color: #F1F5FF;
+    width:100%;
+    padding:15px;
+    border: none;
+    border-radius: 4px;
+    color: #3454CE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    background-color: #F1F5FF;
+    width: 100%;
+}
+
+.info_vaccination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 30%;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1{
+    color: #2D4E7B;
+    font-size: 24px;
+}
+
+.info a{
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.info a:hover{
+    color: white;
+}
+
+.logo_v {
+    padding-left: 100px;
+}
+
+.logo_v p{
+    color: gray;
+    font-size: 18px;
+}
+
+.logo_v h2 {
+    color: #3267D9;
+    font-size: 32px;
+}
+
+.rights_reserved{
+    display: flex;
+    background-color: #F1F5FF;
+    width: 100%;
+    color: gray;
+    font-size: 18px;
+}
+
+.rs_1 {
+    padding-left: 100px;
+}
+.rs_2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 47%;
+}
+
+.rs_2 p {
+    padding-right: 30px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px;
+    }
+}
